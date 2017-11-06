@@ -1,0 +1,12 @@
+extends layout.pug
+block content
+    #userpanelhalf
+        #loginpage
+            #titlebanner
+            #userpanel
+                h1(id='login' class="pagefont") SignUp
+                div(style="color:red") 
+                    p #{message}
+                #signinApp
+                p(class='pagefont') Need to login?
+                a(class="log" href="/") Login

@@ -1,0 +1,21 @@
+extends layout.pug
+block content
+    #toolbar
+        span(id='chat') Chat  
+        a(href='/main' id='choosearoom') Select_Game
+        span(id='newgame') Restart_Game
+        a(href='/logout' id='logout')
+            span() LogOut
+    div(id='iam' style='display:none') #{player}
+    #checkmeout
+    #matchApp
+    #chatApp
+    #sig
+        h4(id='sigh1')
+    #room(style='display:none') #{room}
+    #username(style='display:none') #{name}
+    #hideChat(style='display:none')
+    if hidePanel
+        #hidePanel(style='display:none') #{hidePanel}
+    #verses vs.
+    #canvas
